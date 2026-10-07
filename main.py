@@ -5,7 +5,10 @@ It prints things that make the container VISIBLE to students:
   - the hostname, which is the container ID
   - an environment variable, so you can demo  -e
   - a visit counter held in memory, which resets when the container restarts
+  - the Python version
+  hahahahahaaaaaa
 """
+
 import os
 import socket
 import sys
