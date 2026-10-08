@@ -7,6 +7,7 @@ It prints things that make the container VISIBLE to students:
   - a visit counter held in memory, which resets when the container restarts
   - the Python version
   hahahahahaaaaaa
+  yokoso watashiwa no soul society
 """
 
 import os
@@ -22,7 +23,9 @@ visits = 0
 started = datetime.now().strftime("%H:%M:%S")
 
 PAGE = """<!doctype html>
-<html><head><meta charset="utf-8"><title>Docker demo</title>
+<html>
+<head>
+<meta charset="utf-8"><title>Docker demo</title>
 <style>
   body{{font-family:system-ui,-apple-system,sans-serif;background:#16191f;color:#eee;
        display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0}}
@@ -44,7 +47,9 @@ PAGE = """<!doctype html>
     <dt>Started at</dt><dd>{started}</dd>
     <dt>Visits</dt><dd class="big">{visits}</dd>
   </dl>
-</div></body></html>"""
+</div>
+</body>
+</html>"""
 
 
 @app.route("/")
